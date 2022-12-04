@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg:#242635;
+    --letras:#34b0be;
+    --divLetters:grey;
+}
+
+.Wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+ }
+/*NAV BAR*/
+header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3em;
+   
+}
+.navBar{
+    width: 100%;
+}
+.Menu{
+    display: flex;
+    width: 100%;
+    gap: 3em;
+    justify-content: end;
+    list-style: none;
+    z-index: 3;
+}
+.Menu li{
+   text-size-adjust: auto;
+   margin-right: 2%;
+}
+.Menu a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold;
+}
+.Menu li :hover{
+    color: var(--letras);
+}
+.Menu .Active{
+    color: var(--letras);
+}
+.nav-responsive{
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    justify-content: flex-end;
+    font-size: 30px;
+}
+/*NAV BAR ENDS*/
+
+.firstSection{
+    padding: 5%;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+
+}
+.main{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: var(--bg);
+   
+}
+
+ .main h2{
+    color: var(--letras);
+    font-size: 32px;
+ }   
+
+.FT h2{
+    text-decoration: underline;
+    font-size: 50px;
+    color: white;
+   
+}
+.firstSection{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    background-color: var(--bg);
+    
+    height: 50%;
+}
+.firstSection h1{
+    margin-top: 5%;
+    color:var(--letras);
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+}
+.textSection{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-self: start;
+    flex-wrap: wrap;
+    justify-self: start;
+    z-index: 3;
+
+}
+.textSection p{
+    margin-top: 3%;
+    width: 100%;
+    align-self: center;
+    justify-self: start;
+}
+.textSection span{
+    color: var(--letras);
+    font-weight: bold;
+}
+.sectionContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+}
+.imgContainer{
+    background-color:#4B4B4B;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    transform: translate(-30%);
+    text-align: center;
+    z-index: 1;
+}
+.imgContainer img{
+    margin-top: 20px;
+    width: 300px;
+    margin-left: 0;
+}
+.Buttons{
+    margin-top: 5%;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    gap: 3.5%;
+}
+.button{
+    width:50px;
+    height: 50px;
+    padding-top: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    align-self: flex-end;
+    text-align: center;
+    color: var(--bg);
+    font-size: 30px;
+}
+
+.button2{
+    width: 50px;
+    height: 50px;
+    padding-top: 12px;
+    border-radius: 100%;
+    background-color: #fff;
+    align-self: flex-end;
+    text-align: center;
+}
+.button3{
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    align-self: flex-end;
+    text-align: center;
+}
+
+.logos{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: -50px;
+    background-color: #4B4B4B;
+    align-self: flex-end;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    gap: 5%;
+    height: 150px;
+    z-index: 2;
+    opacity: 1;
+}
+.logos>div{
+    width: 20%;
+    height: 100px;
+}
+.logo1{
+    background-color: gray;
+    text-align: center;
+    color: var(--bg);
+    font-size: 80px;
+    border-radius: 5%;
+    align-items: center;
+}
+.logo2{
+    background-color: gray;
+    text-align: center;
+    color: var(--bg);
+    font-size: 80px;
+    border-radius: 5%;
+    align-items: center;
+}
+.logo3{
+    background-color: gray;
+    text-align: center;
+    color: var(--bg);
+    font-size: 80px;
+    border-radius: 5%;
+    align-items: center;
+}
+/*ABOUT ME SECTION*/
+.About{
+    margin-top: 10%;
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+.About h2{
+    margin-top: 10%;
+    color: var(--letras);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.About p{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+/* SERVICES PART*/
+.Container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+.services {
+    overflow-x: hidden;
+}
+.services h2{
+    padding: 5%;
+    text-align: center;
+    color: var(--letras);
+}
+.Containers{
+   margin: 0 auto;
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   gap: 5%;
+
+}
+.Containers>div{
+    width: 250px;
+    height: 350px;
+    background-color:#fff;
+   
+}
+/*FIRST DIV*/
+.item{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+.Pencil{
+    margin-top: -150px;
+    position: relative;
+    z-index: 2;
+}
+
+.Vector{
+    margin-top:0 ;
+    width: 100%;
+    z-index: 1;
+}
+.altText {
+    margin-top: 10%;
+    text-align: center;
+    color: #D1CECA;
+    font-weight: bold;
+}
+/*SECOND DIV*/
+.item1{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+.altText2 {
+    margin-top: 10%;
+    text-align: center;
+    color: #D1CECA;
+    font-weight: bold;
+    width: 100%;
+}
+/* THRID DIV*/
+.item2{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.altText3 {
+    margin-top: 10%;
+    text-align: center;
+    color: #D1CECA;
+    font-weight: bold;
+}
+/*END SERVICES*/
+/* SKILLS SECTION*/
+.MySkills h2{
+   margin-top: 40px;
+    color: var(--letras);
+    text-align: center;
+}
+.skills{
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: start;
+    
+}
+.number{
+    text-align: end;
+}
+.skillsName{
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-align: start;
+}
+.skills-Bar{
+    height: 14px;
+    background-color: #fff;
+    border-radius: 7px;
+    font-weight: bold;
+}
+.skills-per{
+    height: 14px;
+    background-color: var(--letras);
+    border-radius: 7px;
+    position: relative;
+    animation: fillBars 2.5s;
+}
+.number{
+    font-weight: bold;
+}
+/*END SKILLS SECTION*/
+/*MY WORK SECTION*/
+.MyWork{
+    margin: 0 auto;
+    text-align: center;
+    color: var(--letras);
+    width: 80%;
+}
+.Work {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    border: #fff;
+    flex-wrap: nowrap;
+    gap: 2% ;
+    justify-content: start;
+    overflow-x: scroll;
+}
+.Work img {
+    margin-top: 20px;
+    width: 350px;
+    height: 350px;
+}
+/*ENDS WORK SECTION*/
+/*CONTACT SECTION*/
+.contact{
+    margin: 0 auto;
+    padding-top: 5%;
+    text-align: center;
+    color: var(--letras);
+    width: 80%;
+    height: 50%;
+}
+.Contact-container{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+}
+.Contact-container>div{
+
+    width: 300px;
+    background-color: #fff;
+    height: 300px;
+}
+.Option{
+    text-align: center;
+}
+.optionText{
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.Vector2{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.OImg{
+    margin-top: -150px;
+    position: relative;
+    z-index: 2;
+    width: 30%;
+}
+.OaltText{
+    padding-top: 4%;
+    color: var(--divLetters);
+    font-weight: bold;
+}
+.Option1{
+    text-align: center;
+}
+.optionText2{
+    padding-top: 4%;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.OaltText2{
+    padding-top: 4%;
+    color: var(--divLetters);
+    font-size: 18px;
+    font-weight: bold;
+}
+footer{
+    padding-top: 5%;
+    text-align: center;
+}
+@media (max-width: 998px){
+    /*NAV MODIFICATIONS*/
+    nav{
+        display: none;
+        z-index: 3;
+    }
+    .nav-responsive{
+        display: block;
+        top: 20px;
+    }
+   
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 25px;
+        background-color: #252A2E;
+        width:30%;
+        justify-self: flex-end;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+/*BODY MODIFICATIONS*/
+    .Wrapper h1{
+       font-size: 50px;
+       margin-top: 0;
+       text-decoration: underline;
+    }
+    .Wrapper h2{
+        font-size: 32px;
+        text-decoration: none;
+    }
+    .sectionContainer{
+        justify-content: center;
+    }
+    .Containers{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        justify-content: flex-start;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    .Containers > div {
+        margin-bottom: 20px;
+    }
+    .prueba {
+        min-width: 300px;
+    }
+    .textSection{
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+        order: 1;
+    }
+    .FT{
+        width: 100%;
+    }
+    .Buttons{
+        justify-content: center;
+        gap: 40px;
+    }
+    .logos{
+        width: 90%;
+        height: 80px;
+        margin-top: 20px;
+        order: 2;
+    }
+    .logos>div{
+        height: 60px ;
+        border-radius: 10px;
+    }
+    .logo1{
+        font-size: 40px;
+    }
+    .logo1 i {
+        margin-top: 10px;
+    }
+    .logo2{
+        font-size: 40px;
+    }
+    .logo2 i {
+        margin-top: 10px;
+    }
+    .logo3{
+        font-size: 40px;
+    }
+    .logo3 i {
+        margin-top: 10px;
+    }
+    .imgContainer{
+     width: 300px;
+     height: 300px;
+     border-radius: 50%;
+     order: 0;
+     justify-self: center;
+     transform: translate(0%);
+    }
+    .imgContainer img{
+        width: 200px;
+       margin-top: -10px;
+    }
+
+.Contact-container{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.Contact-container>div{
+    width: 150px;
+    background-color: #fff;
+    height: 150px;
+}
+.Vector2{
+    width: 100%;
+}
+.Phone{
+    position: relative;
+    z-index: 2;
+    margin-top: -400px;
+}
+.optionText{
+    font-size: 10px;
+}
+.OaltTex{
+    font-size: 10px;
+}
+
+.OaltTex2{
+    font-size: 10px;
+}
+}
